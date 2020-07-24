@@ -2,7 +2,8 @@
 This is a python script to download wikipedia source domains from category pages.
 
 For example, it could be run:
-$python wiki_source_finder.py 'Wikipedia'
+>$python wiki_source_finder.py 'Wikipedia'
+
 Which would create a file (by default, output.csv) listing all the top-level domains from the References of each page in the Wikipedia category Category:Wikipedia.
 
 The script takes the following arguments:
