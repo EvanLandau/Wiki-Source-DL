@@ -1,7 +1,7 @@
 """This is a program to collect and sort sources from wikipedia articles, and optionally check them against an external database, then return a CSV file.
 This program was created for money at the request of a client, who gave permission for it to be released, open source, to the general public.
 It relies on the PyMediaWiki and tldextract libraries, which can be found on pypi.org and are released under the MIT and BSD licenses respectively.
-Developed by Evan Landau, 7/18/2020 - .
+Developed by Evan Landau, 7/18/2020 - 7/23/2020.
 """
 
 import argparse
@@ -11,7 +11,7 @@ import mediawiki
 import tldextract
 
 wikipedia = mediawiki.MediaWiki()
-wikipedia.user_agent = 'Source-checking Bot'
+wikipedia.user_agent = 'Source-checking Bot, source code available from https://github.com/EvanLandau/Wiki-Source-DL'
 
 def article_sources_from_category(input_page):
     """Takes in a wikipedia.WikipediaPage article, which should be a category (but this is not checked)
